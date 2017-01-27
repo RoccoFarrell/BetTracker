@@ -5,6 +5,9 @@ module.exports = function(environment) {
     modulePrefix: 'bet-tracker',
     environment: environment,
     rootURL: '/',
+    contentSecurityPolicy: {
+     'connect-src' : "'self' http://localhost:80"
+      },
     locationType: 'auto',
     EmberENV: {
       FEATURES: {

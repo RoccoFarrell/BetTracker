@@ -5,7 +5,7 @@ export default function() {
     return {
       data: [{
         type: 'bet',
-        id: '1010102093029130',
+        _id: '1010102093029130',
         attributes: {
         description: 'zeke tears acl',
         datecreated: '05/05/2016',
@@ -19,7 +19,7 @@ export default function() {
         ]}}, 
         {
         type: 'bet',        
-        id: '1010102093029131',
+        _id: '1010102093029131',
         attributes: {
         description: 'robots in 2018',
         datecreated: '2012-04-23T18:25:43.511Z',
