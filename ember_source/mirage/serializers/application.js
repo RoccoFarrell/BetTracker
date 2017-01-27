@@ -1,9 +1,12 @@
 import { JSONAPISerializer } from 'ember-cli-mirage';
 
 export default JSONAPISerializer.extend({
-	primaryKey: '_id',
-    serializeId: function(id) {
-        return id.toString();
-    }
+	serialize(snapshot, options) {
+    var json = this._super(...arguments);
+
+    console.log(json);
+
+    return json;
+  },
 });
 

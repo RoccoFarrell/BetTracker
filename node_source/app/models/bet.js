@@ -6,17 +6,15 @@ var Schema = mongoose.Schema;
 // user schema
 var BetSchema = new Schema({
 	type: { type: String, required: true},
-	attributes: {
 		description: { type: String, required: true},
 		datecreated: { type: String, required: true},
-		datesettled: {type: String, required: true},
+		datesettled: { type: String, required: true},
 		datepaid: { type: String, required: true},
 		amount: { type: String, required: true},
 		category: { type: String, required: true},
 		participants: [{
 			participantID: { type: Schema.ObjectId }
 		}]
-	}
 });
 
 // return the model

@@ -8,11 +8,11 @@ var bodyParser = require('body-parser'); // get body-parser
 var morgan = require('morgan'); // used to see requests
 var mongoose = require('mongoose'); // for working w/ our database
 var config = require('./config');
-
 var path = require('path');
 
 //Connect to database
 mongoose.connect(config.database);
+console.log(mongoose.connection.readyState);
 
 // APP CONFIGURATION ---------------------
 // use body parser so we can grab information from POST requests
@@ -29,7 +29,6 @@ app.use(function(req, res, next) {
 
 // log all requests to the consoleBuild a RESTful Node API 59
 app.use(morgan('dev'));
-app.use(express.static(__dirname + '/public'));
 
 // ROUTES FOR OUR API
 // =============================
