@@ -33,4 +33,21 @@ export default function() {
       ]}}]
     };
   });
+
+  this.get('/users', function() {
+    return {
+      data: [{
+        type: 'user',
+        id: 'user093029130',
+        attributes: {
+        username: 'cheeseboy',
+        }}, 
+        {
+        type: 'user',
+        id: 'user093029130',
+        attributes: {
+        username: 'cheesegirl',
+        }}]
+    };
+  });
 }
