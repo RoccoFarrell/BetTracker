@@ -6,30 +6,40 @@
   <article class="listing">
     <h3>{{bet.id}}</h3>
     <div class="detail">
+      <span>Amount:</span> {{bet.amount}}
+    </div>
+    <div class="detail">
+      <span>Participants:</span> 
+      {{#each bet.participants as |participant|}}
+      <div>
+        <span>{{participant}}</span>
+      </div>
+      {{/each}}
+    </div>
+    <div class="detail">
       <span>Description:</span> {{bet.description}}
     </div>
     <div class="detail">
       <span>Date Created:</span> {{bet.datecreated}}
     </div>
     <div class="detail">
+      <span>Active Flag:</span> {{bet.activefalg}}
+    </div>
+    <div class="detail">
       <span>Date Settled:</span> {{bet.datesettled}}
+    </div>
+    <div class="detail">
+      <span>Winner:</span> {{bet.winner}}
+    </div>
+    <div class="detail">
+      <span>Paid?:</span> {{bet.paidflag}}
     </div>
     <div class="detail">
       <span>Date Paid:</span> {{bet.datepaid}}
     </div>
     <div class="detail">
-      <span>Amount:</span> {{bet.amount}}
-    </div>
-    <div class="detail">
       <span>Category:</span> {{bet.category}}
     </div>
-    <div class="detail">
-      <span>Participants:</span> 
-      {{#each bet.participants as |participant|}}
-      <div>
-      	<span>{{participant}}</span>
-      </div>
-      {{/each}}
-    </div>
+    
   </article>
 {{/each}}
