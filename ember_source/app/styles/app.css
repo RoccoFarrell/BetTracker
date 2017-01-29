@@ -6,3 +6,20 @@
 .testClass{
 	position: fixed;
 }
+
+.site-nav-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.site-sidenav{
+	position: fixed;
+}
+
+.mainContent{
+	margin-left: 100px;
+}
+
