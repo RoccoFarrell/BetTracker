@@ -1,38 +1,51 @@
 <!-- No header, and the drawer stays open on larger screens (fixed drawer). -->
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer wrapperFlex">
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Borrowe</span>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">
-        {{#link-to 'users' class="button"}}
-        Users
-        {{/link-to}}
-      </a>
-      <a class="mdl-navigation__link" href="">
-        {{#link-to 'bets' class="button"}}
-        Bets
-        {{/link-to}}
-      </a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-    </nav>
-  </div>
-  <main class="mdl-layout__content">
-    <div class="page-content mdl-cell mdl-cell--6-col">
-      {{#link-to 'users' class="button"}}
-        users
-      {{/link-to}}
+{{#paper-sidenav-container class="site-nav-container flex-grow layout-row ember-view"}}
+      {{#paper-sidenav
+        class="md-whiteframe-z2  testClass"
+        name="left"
+        open=leftSideBarOpen
+        onToggle=(action (mut leftSideBarOpen))
+      }}
+        {{#paper-toolbar as |toolbar|}}
+          {{#paper-toolbar-tools}}Left Sidenav{{/paper-toolbar-tools}}
+        {{/paper-toolbar}}
+        {{#paper-content padding=true}}
+          {{#link-to 'users' class="button"}}
+            users
+          {{/link-to}}
+        {{/paper-content}}
+        {{#paper-content padding=true}}
+          {{#link-to 'bets' class="button"}}
+            bets
+          {{/link-to}}
+        {{/paper-content}}
+      {{/paper-sidenav}}
 
-      
+      {{#paper-card-content class="flex layout-column"}}
+        <div class="layout-fill layout-align-start-center layout-column">
+          <p>
+            The left sidenav will "lock open" on a medium (>=960px wide) device test
+          </p>
+          <p>
+            Left sidenav is {{if leftSideBarOpen "opened" "closed"}}
+          </p>       
 
-       <div>
-            {{input value=model.name class="form-control"}}
-       </div>
+           <div>
+                {{input value=model.name class="form-control"}}
+           </div>
 
-      {{outlet}}
+          {{outlet}}
 
-    </div>
-  </main>
-</div>
+
+          {{#paper-sidenav-toggle name="left" as |toggleAction|}}
+            {{#paper-button raised=true classNames="hide-gt-sm" onClick=(action toggleAction)}}
+              Toggle
+            {{/paper-button}}
+          {{/paper-sidenav-toggle}}
+
+        </div>
+      {{/paper-card-content}}
+{{/paper-sidenav-container}}
+  
 
 

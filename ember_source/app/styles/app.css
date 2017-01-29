@@ -1,11 +1,8 @@
-body > .ember-view
-{
-  display:        flex;
-  min-height:     100vh;
-  flex-direction: column;
+
+.wrapperFlex{
+	overflow: auto;
 }
 
-.wrapperFlex
-{
-  flex: 1 0 auto;
+.testClass{
+	position: fixed;
 }
