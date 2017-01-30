@@ -1,38 +1,39 @@
 <!-- No header, and the drawer stays open on larger screens (fixed drawer). -->
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer wrapperFlex">
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Borrowe</span>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">
-        {{#link-to 'users' class="button"}}
-        Users
-        {{/link-to}}
-      </a>
-      <a class="mdl-navigation__link" href="">
-        {{#link-to 'bets' class="button"}}
-        Bets
-        {{/link-to}}
-      </a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-    </nav>
-  </div>
-  <main class="mdl-layout__content">
-    <div class="page-content mdl-cell mdl-cell--6-col">
-      {{#link-to 'users' class="button"}}
-        users
-      {{/link-to}}
-
-      
-
-       <div>
-            {{input value=model.name class="form-control"}}
-       </div>
-
-      {{outlet}}
-
+<div class="mainContent">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer wrapperFlex">
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Borrowe</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">
+          {{#link-to 'users' class="button"}}
+          Users
+          {{/link-to}}
+        </a>
+        <a class="mdl-navigation__link" href="">
+          {{#link-to 'bets' class="button"}}
+          Bets
+          {{/link-to}}
+        </a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav>
     </div>
-  </main>
-</div>
+    <main class="mdl-layout__content">
+      <div class="page-content mdl-cell mdl-cell--6-col">
+        {{#link-to 'users' class="button"}}
+          users
+        {{/link-to}}
 
+        
+
+         <div>
+              {{input value=model.name class="form-control"}}
+         </div>
+
+        {{outlet}}
+
+      </div>
+    </main>
+  </div>
+</div>
 

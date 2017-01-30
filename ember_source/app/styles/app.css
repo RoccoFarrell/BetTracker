@@ -3,9 +3,19 @@ body > .ember-view
   display:        flex;
   min-height:     100vh;
   flex-direction: column;
+  height: 100%;
 }
 
 .wrapperFlex
 {
   flex: 1 0 auto;
+}
+
+.mainContent{
+	height: 100%;
+}
+
+#ember383{
+	height: 100%;
+	display: flex;
 }
