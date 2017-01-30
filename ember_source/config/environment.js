@@ -14,6 +14,12 @@ module.exports = function(environment) {
       'img-src': "'self' data:",
       'media-src': "'self'"
       },
+      firebase: {
+        apiKey: 'AIzaSyB_UziHKETWf7CLADkbi_Z9_1B_wBzeSsY',
+        authDomain: 'bettracker-d3275.firebaseapp.com',
+        databaseURL: 'https://bettracker-d3275.firebaseio.com',
+        storageBucket: 'bettracker-d3275.appspot.com'
+    },
     locationType: 'auto',
     EmberENV: {
       FEATURES: {

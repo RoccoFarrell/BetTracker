@@ -1,0 +1,12 @@
+<h3>Input Errors</h3>
+  <p>
+    {{paper-input
+      label="amount"
+      value=amount
+      onChange=(action (mut amount))
+      required=true
+      errorMessages=(hash
+        required="Amount is required."
+      )
+    }}
+  </p>

@@ -38,29 +38,23 @@
             bets
           {{/link-to}}
         {{/paper-content}}
+
+        {{#paper-content padding=true}}
+          {{#link-to 'submitbet' class="button"}}
+            submit bet
+          {{/link-to}}
+        {{/paper-content}}
       {{/paper-sidenav}}
 
       {{#paper-card-content class="flex layout-column"}}
-        <div class="layout-fill layout-align-start-center layout-column">
-          <p>
-            The left sidenav will "lock open" on a medium (>=960px wide) device test
-          </p>
-          <p>
-            Left sidenav is {{if leftSideBarOpen "opened" "closed"}}
-          </p>       
+        <div class="layout-fill layout-align-start-center layout-column"> 
 
-           <div>
-                {{input value=model.name class="form-control"}}
-           </div>
+           
 
           {{outlet}}
 
 
-          {{#paper-sidenav-toggle name="left" as |toggleAction|}}
-            {{#paper-button raised=true classNames="hide-gt-sm" onClick=(action toggleAction)}}
-              Toggle
-            {{/paper-button}}
-          {{/paper-sidenav-toggle}}
+         
 
         </div>
       {{/paper-card-content}}
