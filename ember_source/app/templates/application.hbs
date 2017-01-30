@@ -1,4 +1,23 @@
 <!-- No header, and the drawer stays open on larger screens (fixed drawer). -->
+{{! without contextual components }}
+  {{#paper-toolbar}}
+    {{#paper-toolbar-tools}}
+      {{#paper-button iconButton=true}}
+        {{paper-icon "menu"}}
+      {{/paper-button}}
+      <h2>
+        Toolbar with Icon Buttons
+      </h2>
+      <span class="flex"></span>
+      {{#paper-button iconButton=true}}
+        {{paper-icon "favorite"}}
+      {{/paper-button}}
+      {{#paper-button iconButton=true}}
+        {{paper-icon "more_vert"}}
+      {{/paper-button}}
+    {{/paper-toolbar-tools}}
+  {{/paper-toolbar}}
+
 {{#paper-sidenav-container class="site-nav-container flex-grow layout-row ember-view"}}
       {{#paper-sidenav
         class="md-whiteframe-z2  testClass"
