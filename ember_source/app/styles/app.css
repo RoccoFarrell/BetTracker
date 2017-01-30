@@ -1,6 +1,8 @@
+<<<<<<< HEAD
 
 .wrapperFlex{
 	overflow: auto;
+	flex: 1 0 auto;
 }
 
 .testClass{
@@ -21,5 +23,19 @@
 
 .mainContent{
 	margin-left: 100px;
+	height: 100%;
+}
+
+body > .ember-view
+{
+  display:        flex;
+  min-height:     100vh;
+  flex-direction: column;
+  height: 100%;
+}
+
+#ember383{
+	height: 100%;
+	display: flex;
 }
 
