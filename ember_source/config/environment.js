@@ -6,8 +6,20 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     contentSecurityPolicy: {
-     'connect-src' : "'self' http://localhost:80"
+     'default-src': "'none'",
+      'script-src': "'self' 'unsafe-inline'",
+      'style-src': "'self' 'unsafe-inline' https://fonts.googleapis.com",
+      'font-src': "'self' fonts.gstatic.com",
+      'connect-src': "'self'",
+      'img-src': "'self' data:",
+      'media-src': "'self'"
       },
+      firebase: {
+        apiKey: 'AIzaSyB_UziHKETWf7CLADkbi_Z9_1B_wBzeSsY',
+        authDomain: 'bettracker-d3275.firebaseapp.com',
+        databaseURL: 'https://bettracker-d3275.firebaseio.com',
+        storageBucket: 'bettracker-d3275.appspot.com'
+    },
     locationType: 'auto',
     EmberENV: {
       FEATURES: {

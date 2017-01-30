@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('about');
   this.route('bets');
   this.route('users');
+  this.route('submitbet');
 });
 
 export default Router;

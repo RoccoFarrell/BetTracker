@@ -1,3 +1,31 @@
+<<<<<<< HEAD
+
+.wrapperFlex{
+	overflow: auto;
+	flex: 1 0 auto;
+}
+
+.testClass{
+	position: fixed;
+}
+
+.site-nav-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.site-sidenav{
+	position: fixed;
+}
+
+.mainContent{
+	margin-left: 100px;
+	height: 100%;
+}
+
 body > .ember-view
 {
   display:        flex;
@@ -6,16 +34,8 @@ body > .ember-view
   height: 100%;
 }
 
-.wrapperFlex
-{
-  flex: 1 0 auto;
-}
-
-.mainContent{
-	height: 100%;
-}
-
 #ember383{
 	height: 100%;
 	display: flex;
 }
+
