@@ -1,0 +1,39 @@
+<ul class="post-publish">
+  <li>
+  {{paper-input
+  label="username"
+  value=username
+  onChange=(action (mut username))
+  required=true
+  errorMessages=(hash
+    required="username is required."
+  )
+}}
+  </li>
+  <li>
+    {{paper-input
+  label="firstname"
+  value=firstname
+  onChange=(action (mut firstname))
+  required=true
+  errorMessages=(hash
+    required="firstname is required."
+  )
+}}
+  </li>
+  <li>
+    {{paper-input
+  label="lastname"
+  value=lastname
+  onChange=(action (mut lastname))
+  required=true
+  errorMessages=(hash
+    required="lastname is required."
+  )
+}}
+  </li>
+  <li>
+    <button {{action "publishUser"}}>Publish</button>
+  </li>
+</ul>
+

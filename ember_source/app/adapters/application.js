@@ -9,6 +9,7 @@ export default DS.JSONAPIAdapter.extend({
   */
 });
 
+
 import FirebaseAdapter from 'emberfire/adapters/firebase';
 export default FirebaseAdapter.extend({
 	function(payload){

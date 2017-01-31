@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('bets');
   this.route('users');
   this.route('submitbet');
+  this.route('submituser');
 });
 
 export default Router;

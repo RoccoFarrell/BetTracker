@@ -19,4 +19,11 @@ export default DS.JSONAPISerializer.extend({
     	return json_converted;
   },
   */
+  serialize(snapshot, options) {
+    var json = this._super(...arguments);
+
+    console.log(json);
+
+    return json;
+  }
 });
